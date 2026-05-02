@@ -1,0 +1,180 @@
+RANDOMNESS EXPERIMENT SUMMARY
+
+Generator: C++ mt19937
+Block Frequency
+  Mean p-value: 0.5382
+  Std dev     : 0.3032
+
+Monobit
+  Mean p-value: 0.4894
+  Std dev     : 0.2601
+
+Runs
+  Mean p-value: 0.4377
+  Std dev     : 0.2810
+
+Generator: C++ random_device
+Block Frequency
+  Mean p-value: 0.4898
+  Std dev     : 0.2968
+
+Monobit
+  Mean p-value: 0.5173
+  Std dev     : 0.2868
+
+Runs
+  Mean p-value: 0.4844
+  Std dev     : 0.2916
+
+Generator: Python mt19937
+Block Frequency
+  Mean p-value: 0.5529
+  Std dev     : 0.2994
+
+Monobit
+  Mean p-value: 0.5041
+  Std dev     : 0.2848
+
+Runs
+  Mean p-value: 0.5030
+  Std dev     : 0.2924
+
+Generator: Python os.urandom
+Block Frequency
+  Mean p-value: 0.4852
+  Std dev     : 0.3062
+
+Monobit
+  Mean p-value: 0.4180
+  Std dev     : 0.2862
+
+Runs
+  Mean p-value: 0.5058
+  Std dev     : 0.2919
+
+
+
+UNIFORMITY TEST (NIST)
+C++ mt19937 - Monobit
+  Chi-square: 8.6000
+  p-value   : 0.4750
+  Result    : PASS
+
+C++ mt19937 - Block Frequency
+  Chi-square: 6.8000
+  p-value   : 0.6579
+  Result    : PASS
+
+C++ mt19937 - Runs
+  Chi-square: 10.2000
+  p-value   : 0.3345
+  Result    : PASS
+
+C++ random_device - Monobit
+  Chi-square: 5.6000
+  p-value   : 0.7792
+  Result    : PASS
+
+C++ random_device - Block Frequency
+  Chi-square: 5.2000
+  p-value   : 0.8165
+  Result    : PASS
+
+C++ random_device - Runs
+  Chi-square: 7.0000
+  p-value   : 0.6371
+  Result    : PASS
+
+Python mt19937 - Monobit
+  Chi-square: 8.0000
+  p-value   : 0.5341
+  Result    : PASS
+
+Python mt19937 - Block Frequency
+  Chi-square: 7.0000
+  p-value   : 0.6371
+  Result    : PASS
+
+Python mt19937 - Runs
+  Chi-square: 14.8000
+  p-value   : 0.0966
+  Result    : PASS
+
+Python os.urandom - Monobit
+  Chi-square: 11.4000
+  p-value   : 0.2493
+  Result    : PASS
+
+Python os.urandom - Block Frequency
+  Chi-square: 8.2000
+  p-value   : 0.5141
+  Result    : PASS
+
+Python os.urandom - Runs
+  Chi-square: 9.8000
+  p-value   : 0.3669
+  Result    : PASS
+
+
+
+PROPORTION OF PASSING (NIST)
+C++ mt19937 - Monobit
+  Observed proportion: 0.9800
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+C++ mt19937 - Block Frequency
+  Observed proportion: 0.9800
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+C++ mt19937 - Runs
+  Observed proportion: 0.9700
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+C++ random_device - Monobit
+  Observed proportion: 0.9900
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+C++ random_device - Block Frequency
+  Observed proportion: 1.0000
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+C++ random_device - Runs
+  Observed proportion: 1.0000
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+Python mt19937 - Monobit
+  Observed proportion: 0.9900
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+Python mt19937 - Block Frequency
+  Observed proportion: 0.9900
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+Python mt19937 - Runs
+  Observed proportion: 1.0000
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+Python os.urandom - Monobit
+  Observed proportion: 0.9700
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+Python os.urandom - Block Frequency
+  Observed proportion: 0.9900
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
+Python os.urandom - Runs
+  Observed proportion: 1.0000
+  Expected range    : [0.9602, 1.0198]
+  Result            : PASS
+
