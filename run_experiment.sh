@@ -10,15 +10,17 @@ cd "$BASE_DIR"
 ### activate python virtual environment
 source venv/bin/activate
 
-TRIALS=1000
+TRIALS=5
 BITS=1000000
+
+TIME=$(date +"%H_%M_%S")
 
 CPP_DIR="$BASE_DIR/cpp"
 PY_DIR="$BASE_DIR/py"
-DAT_DIR="$BASE_DIR/data_$TRIALS"
-BIN_DIR="$DAT_DIR/bins_$TRIALS"
-CSV_DIR="$DAT_DIR/trials_$TRIALS"
-RES_DIR="$BASE_DIR/results_$TRIALS"
+DAT_DIR="$BASE_DIR/data_$TRIALS-$TIME"
+BIN_DIR="$DAT_DIR/bins_$TRIALS-$TIME"
+CSV_DIR="$DAT_DIR/trials_$TRIALS-$TIME"
+RES_DIR="$BASE_DIR/results_$TRIALS-$TIME"
 
 mkdir -p "$DAT_DIR"
 mkdir -p "$BIN_DIR"
@@ -62,7 +64,7 @@ echo "All trials completed."
 
 ### generate summary and plots
 echo "Generating summary + plots..."
-python3 $PY_DIR/summary_and_plots.py "$BASE_DIR" "$TRIALS"
+python3 $PY_DIR/summary_and_plots.py "$BASE_DIR" "$CSV_DIR" "$RES_DIR" "$TRIALS"
 
 ### tests complete
 echo "======================================"

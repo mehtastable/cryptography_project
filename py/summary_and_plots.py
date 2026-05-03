@@ -30,11 +30,11 @@ def proportion_test(p_values, alpha=0.01):
     return prop, lower, upper, (lower <= prop <= upper)
 
 ### main
-def main(base_dir, trials):
-    trials_dir = os.path.join(base_dir, f"data_{trials}", f"trials_{trials}")
-    res_dir = os.path.join(base_dir, f"results_{trials}")
+def main(base_dir, csv_dir, res_dir, trials):
+    #trials_dir = os.path.join(base_dir, f"data_{trials}", f"trials_{trials}")
+    #res_dir = os.path.join(base_dir, f"results_{trials}")
     os.makedirs(res_dir, exist_ok=True)
-    files = sorted(glob.glob(os.path.join(trials_dir, "*.csv")))
+    files = sorted(glob.glob(os.path.join(csv_dir, "*.csv")))
     rows = []
     ### load data
     for f in files:
@@ -172,5 +172,7 @@ def main(base_dir, trials):
 ### program entry
 if __name__ == "__main__":
     base_dir = sys.argv[1]
-    trials = int(sys.argv[2])
-    main(base_dir, trials)
+    csv_dir = sys.argv[2]
+    res_dir = sys.argv[3]
+    trials = sys.argv[4]
+    main(base_dir, csv_dir, res_dir, trials)
