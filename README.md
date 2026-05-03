@@ -32,9 +32,9 @@ Using the terminal/command line:
 
 The program will run the requested number of trials, generating the requested number of bits each time and the bit sequence as a binary file in the data folder.
 
-The bit sequences will be tested using the three NIST tests above.
+The bit sequences will be tested using the three NIST tests above and save as .csv files in the results folder.
 
-The results will be save as .txt, .csv, and .png files in the results folder.
+The results will be plotted and saved as .txt, .csv, and .png files in the results folder.
 
 ## Future Work
 1. Recreate all 15 tests and include them in the pipeline.
