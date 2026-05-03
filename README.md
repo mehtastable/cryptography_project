@@ -15,7 +15,7 @@ The first three NIST tests were recreated and used to test the generated sequenc
 3. Runs Test
 
 ## Installation
-If using Codespaces:
+If running in Codespaces:
 - Python virtual environment should download the required packages using the requirements.txt.
 
 If running locally:
@@ -26,9 +26,10 @@ If running locally:
 
 ## Running the program
 Using the terminal/command line:
-1. Run the bash script run_experiment.sh: `./run_experiment.sh`
-2. Enter the number of trials to run: `100` (NIST recommends 100 or more trials)
-3. Enter the number of bits to generate: `1000000` (NIST recommends 1,000,000 or more bits)
+1. Navigate to project folder
+2. Run the bash script run_experiment.sh: `./run_experiment.sh`
+3. Enter the number of trials to run: `100` (NIST recommends 100 or more trials)
+4. Enter the number of bits to generate: `1000000` (NIST recommends 1,000,000 or more bits)
 
 The program will run the requested number of trials, generating the requested number of bits each time and the bit sequence as a binary file in the data folder.
 
