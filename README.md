@@ -38,5 +38,6 @@ The bit sequences will be tested using the three NIST tests above and save as .c
 The results will be plotted and saved as .txt, .csv, and .png files in the results folder.
 
 ## Future Work
-1. Recreate all 15 tests and include them in the pipeline.
-2. Implement the NIST sts tool in the pipeline to ensure that my implementation of the tests are accurate.
+1. Plot the Proportion of Sequences Passing a Test.
+2. Recreate all 15 tests and include them in the pipeline.
+3. Implement the NIST sts tool in the pipeline to ensure that my implementation of the tests are accurate.
