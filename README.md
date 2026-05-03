@@ -16,7 +16,7 @@ The first three NIST tests were recreated and used to test the generated sequenc
 
 ## Installation
 If running in Codespaces:
-- Python virtual environment should download the required packages using the requirements.txt.
+- Requirements will automatically be downloaded using the requirements.txt.
 
 If running locally:
 1. Navigate to the project directory
