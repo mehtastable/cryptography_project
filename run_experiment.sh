@@ -10,17 +10,23 @@ cd "$BASE_DIR"
 ### activate python virtual environment
 source venv/bin/activate
 
-TRIALS=5
-BITS=1000000
+TRIALS=${1-}
+BITS=${2-}
+while [ -z "${TRIALS-}" ]; do
+  read -rp "Enter number of trials to run: " TRIALS
+done
+while [ -z "${BITS-}" ]; do
+  read -rp "Enter number of bits to generate: " BITS
+done
 
 TIME=$(date +"%H_%M_%S")
 
 CPP_DIR="$BASE_DIR/cpp"
 PY_DIR="$BASE_DIR/py"
-DAT_DIR="$BASE_DIR/data_$TRIALS-$TIME"
-BIN_DIR="$DAT_DIR/bins_$TRIALS-$TIME"
-CSV_DIR="$DAT_DIR/trials_$TRIALS-$TIME"
-RES_DIR="$BASE_DIR/results_$TRIALS-$TIME"
+DAT_DIR="$BASE_DIR/data_$TRIALS-trials-$BITS-bits-$TIME"
+BIN_DIR="$DAT_DIR/bins_$TRIALS-trials-$BITS-bits-$TIME"
+CSV_DIR="$DAT_DIR/trials_$TRIALS-trials-$BITS-bits-$TIME"
+RES_DIR="$BASE_DIR/results_$TRIALS-trials-$BITS-bits-$TIME"
 
 mkdir -p "$DAT_DIR"
 mkdir -p "$BIN_DIR"
