@@ -31,11 +31,10 @@ def proportion_test(p_values, alpha=0.01):
 
 ### main
 def main(base_dir, csv_dir, res_dir, trials):
-    #trials_dir = os.path.join(base_dir, f"data_{trials}", f"trials_{trials}")
-    #res_dir = os.path.join(base_dir, f"results_{trials}")
     os.makedirs(res_dir, exist_ok=True)
     files = sorted(glob.glob(os.path.join(csv_dir, "*.csv")))
     rows = []
+    
     ### load data
     for f in files:
         name = os.path.basename(f)

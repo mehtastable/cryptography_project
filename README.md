@@ -16,7 +16,7 @@ The first three NIST tests were recreated and used to test the generated sequenc
 
 ## Installation
 If running in Codespaces:
-- Requirements will automatically be installed using the requirements.txt.
+- Python virtual environment should download the required packages using the requirements.txt.
 
 If running locally:
 1. Navigate to the project directory
@@ -38,6 +38,6 @@ The bit sequences will be tested using the three NIST tests above and save as .c
 The results will be plotted and saved as .txt, .csv, and .png files in the results folder.
 
 ## Future Work
-1. Plot the Proportion of Sequences Passing a Test.
-2. Recreate all 15 tests and include them in the pipeline.
-3. Implement the NIST sts tool in the pipeline to ensure that my implementation of the tests are accurate.
+1. Recreate all 15 tests and include them in the pipeline.
+2. Implement the NIST sts tool in the pipeline to ensure that my implementation of the tests are accurate.
+3. Add different C++ and Python generators.

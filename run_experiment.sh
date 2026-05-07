@@ -12,10 +12,10 @@ source venv/bin/activate
 
 TRIALS=${1-}
 BITS=${2-}
-while [ -z "${TRIALS-}" ]; do
+while [[ ! "$TRIALS" =~ ^[0-9]+$ || ! "$TRIALS" -gt 0 ]]; do
   read -rp "Enter number of trials to run: " TRIALS
 done
-while [ -z "${BITS-}" ]; do
+while [[ ! "$BITS" =~ ^[0-9]+$ || ! "$BITS" -gt 0 ]]; do
   read -rp "Enter number of bits to generate: " BITS
 done
 
