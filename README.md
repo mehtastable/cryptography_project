@@ -31,11 +31,12 @@ Using the terminal/command line:
 3. Enter the number of trials to run: `100` (NIST recommends 100 or more trials)
 4. Enter the number of bits to generate: `1000000` (NIST recommends 1,000,000 or more bits)
 
-The program will run the requested number of trials, generating the requested number of bits each time and the bit sequence as a binary file in the data folder.
-
-The bit sequences will be tested using the three NIST tests above and save as .csv files in the results folder.
-
-The results will be plotted and saved as .txt, .csv, and .png files in the results folder.
+The program will: 
+1. Run the requested number of trials
+2. Generate the requested number of bits per trial
+3. Save bit sequence as bytes in a binary file in the data folder
+4. Each bit sequence will be tested using the three NIST tests above and saved as a .csv file in the results folder
+5. The results will be plotted and saved as .txt, .csv, and .png files in the results folder.
 
 ## Future Work
 1. Recreate all 15 tests and include them in the pipeline.
